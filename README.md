@@ -1,5 +1,5 @@
-# joaomarques-website
-Your next static website, created using Qnorr.
+# João Marques website
+My future personal website, work in progress.
 
 ### Requirements
 1. A computer.
