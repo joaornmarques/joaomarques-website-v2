@@ -7,25 +7,51 @@
 /* Use mixin to include desired font, one mixin per weight/style pair */
 //@include font-face($font-family: 'FontNAME', $file-path: 'fontPath', $font-weight: '500', $font-style: 'normal', $RoR: false);
 
-@include font-face(
-	$font-family: 'Poppins',
-	$file-path: '../assets/fonts/Poppins/600/poppins-semibold-webfont',
-	$font-weight: '600', $font-style: 'normal',
-	$RoR: false,
-	$legacy: false );
+@font-face {
+    font-family: HKGrotesk-Bold;
+    src: url("../assets/fonts/HKGrotesk/700/HKGrotesk-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
 
-@include font-face(
-	$font-family: 'Poppins',
-	$file-path: '../assets/fonts/Poppins/700/poppins-bold-webfont',
-	$font-weight: '700',
-	$font-style: 'normal',
-	$RoR: false,
-	$legacy: false);
+
+@font-face {
+    font-family: HKGrotesk-BoldItalic;
+    src: url("../assets/fonts/HKGrotesk/700/HKGrotesk-BoldItalic.woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: HKGrotesk-Medium;
+    src: url("../assets/fonts/HKGrotesk/500/HKGrotesk-Medium.woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: HKGrotesk-MediumItalic;
+    src: url("../assets/fonts/HKGrotesk/500/HKGrotesk-MediumItalic.woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: HKGrotesk-Regular;
+    src: url("../assets/fonts/HKGrotesk/500/HKGrotesk-Regular.woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: HKGrotesk-Italic;
+    src: url("../assets/fonts/HKGrotesk/500/HKGrotesk-Italic.woff");
+    font-weight: 400;
+    font-style: italic;
+}
 
 
 body{
-	font: normal 1rem/1.5 "Helvetica Neue", Helvetica, sans-serif;
-	letter-spacing: -0.01px;
+	font: normal 1rem/1.5 'HKGrotesk-Medium', Helvetica, sans-serif;
+	letter-spacing: -0.2px;
 	color: getAppColor('grayscale', 'base');
 	 -moz-osx-font-smoothing: grayscale;
      -webkit-font-smoothing: antialiased;
@@ -35,7 +61,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Helvetica Neue, Helvetica, -apple-system, Roboto, sans-serif;
+	font-family: 'HKGrotesk-BoldItalic', sans-serif;
 }
 
 
