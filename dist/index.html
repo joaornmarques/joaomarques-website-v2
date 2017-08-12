@@ -41,12 +41,23 @@
    <!-- <link rel="preload" href="/stylesheets/app.css" as="style" onload="this.rel='stylesheet'"> -->
    <link rel="stylesheet" href="stylesheets/app.css">
    
+   <!--jquery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+   
    <script>document.getElementsByTagName('html')[0].classList.remove('no-js');</script>
 </head>
 <body data-context="index">
    <div class="o-skeleton u-bg-color-grayscale" id="app">
       <!--o-sekeleton__head -->
       <div class="o-skeleton__head">
+         <nav class="o-nav">
+            <img src="/assets/images/jm_logo.svg" class="o-nav__logo">
+            <div class="o-nav__container">
+               <a class="o-nav__link">About</a>
+               <a class="o-nav__link">Contact</a>
+            </div>
+         </nav>
       </div>
       <main class="o-skeleton__body" role="main" data-flout="col--">
          <article data-flitem="grow--" data-flout="middle--">

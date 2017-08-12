@@ -15,4 +15,8 @@
 	import * as module from "module";
 */
 
+import "./vendor/jquery.waypoints.min.js";
+
 import "./helpers/helloWorld.js";
+import "./helpers/waypoints.js";
+

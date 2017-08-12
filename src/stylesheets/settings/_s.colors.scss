@@ -13,17 +13,23 @@
 
 $g-colors-maps: (
    brand: (
-      lighter: mix(#6B3384, white, 80%),
-      light: mix(#6B3384, white, 90%),
-      base: #6B3384,
-      dark: mix(#6B3384, black, 90%),
-      darker: mix(#6B3384, black, 80%),
+      lighter: mix(#3A3CFF, white, 80%),
+      light: mix(#3A3CFF, white, 90%),
+      base: #3A3CFF,
+      dark: mix(#3A3CFF, black, 90%),
+      darker: mix(#3A3CFF, black, 80%),
    ),
    primary:(
       light: mix(#50B4F3, white, 80%),
 	   base: #50B4F3,
       dark: #4A90E2,
       darker: #3072E0
+   ),
+   pallet:(
+      pink: #FF0082,
+      green: #00FF8E,
+      sky: #00D3F8,
+      purple: #A068FF
    ),
    grayscale:(
       heaven: #fafafa,
