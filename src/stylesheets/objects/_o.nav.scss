@@ -6,11 +6,22 @@
    position: fixed;
    width: $g-spacing-unit * 7;
    height: $g-spacing-unit * 7;
+   z-index: 9999;
 }
 
 .o-nav__container{
    margin-left: $g-spacing-unit * 9;
    height: $g-spacing-unit * 7;
+   display: inline-block;
+
+   &--side{
+      z-index: 9999;
+      position: fixed;
+      top: $g-spacing-unit * 19;
+      left: -($g-spacing-unit * 10);
+      margin-left: 0;
+      transform: rotate(-90deg);
+   }
 }
 
 .o-nav__link{

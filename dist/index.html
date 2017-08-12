@@ -47,8 +47,8 @@
    
    <script>document.getElementsByTagName('html')[0].classList.remove('no-js');</script>
 </head>
-<body data-context="index">
-   <div class="o-skeleton u-bg-color-grayscale" id="app">
+<body data-context="index" class="u-bg-color-grayscale">
+   <div class="o-skeleton" id="app">
       <!--o-sekeleton__head -->
       <div class="o-skeleton__head">
          <nav class="o-nav">
@@ -57,17 +57,35 @@
                <a class="o-nav__link">About</a>
                <a class="o-nav__link">Contact</a>
             </div>
+         
+            <div class="o-nav__container o-nav__container--side">
+               <a class="o-nav__link">Contact</a>
+               <a class="o-nav__link">About</a>
+            </div>
          </nav>
       </div>
       <main class="o-skeleton__body" role="main" data-flout="col--">
-         <article data-flitem="grow--" data-flout="middle--">
-            <div class="o-container u-text-c u-text-l@sm">
-               <div class="o-block">
-                  <h1 class="u-ts-mega u-color-brand u-m-b-2x">The ~future~ João Marques website</h1>
-                  <p class="u-ts-3 u-color-grayscale--heaven">This is a super early version, it's just the qnorr setup actually</p>
+         <section class="o-section">
+            <article data-flitem="grow--" data-flout="middle--">
+               <div class="o-container u-text-c u-text-l@sm">
+                  <div class="o-block">
+                     <h1 class="u-ts-mega u-color-brand u-m-b-2x">The ~future~ João Marques website</h1>
+                     <p class="u-ts-3 u-color-grayscale--heaven">This is a super early version, it's just the qnorr setup actually</p>
+                  </div>
                </div>
-            </div>
-         </article>
+            </article>
+         </section>
+         
+         <section class="o-section o-projects">
+            <article data-flitem="grow--" data-flout="middle--">
+               <div class="o-container u-text-c u-text-l@sm">
+                  <div class="o-block">
+                     <h1 class="u-ts-mega u-color-brand u-m-b-2x">The ~future~ João Marques website</h1>
+                     <p class="u-ts-3 u-color-grayscale--heaven">This is a super early version, it's just the qnorr setup actually</p>
+                  </div>
+               </div>
+            </article>
+         </section>
          
       </main>
       <!--o-skeleton__feet-->
