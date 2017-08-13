@@ -24,15 +24,18 @@ $container-sizes:(
 	width: 100%;
 	margin: 0 auto;
 	padding: {
-		left: $g-baseline / 2;
-		right: $g-baseline / 2;
+		left: $g-spacing-unit * 2;
+		right: $g-spacing-unit * 2;
 	}
 
-	@each $breakpoint, $size in $container-sizes{
-		@include mappy-bp($breakpoint){
-			max-width: $size;
-		}
+
+	@include mappy-bp(sm){
+      padding: {
+         left: $g-spacing-unit * 11;
+         right: $g-spacing-unit * 11;
+      }
 	}
+
 
 
 	&--flush{

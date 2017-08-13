@@ -1,0 +1,67 @@
+.c-image{
+
+}
+
+.c-image--landing{
+   z-index: -1;
+   position: absolute;
+   top: 10%;
+   overflow-x: hidden;
+   height: 65vh;
+   width: 105%;
+   background-image: url('../assets/images/profile.jpg');
+   background-size: cover;
+   background-position: center;
+   margin-top: 20px;
+   margin-left: 36px;
+
+
+
+   @include mappy-bp(sm){
+      position: relative;
+      top: auto;
+
+      margin-top: -176px;
+      margin-left: 36px;
+      width: 110%;
+   }
+
+   @include mappy-bp(mdl){
+      margin-top: -188px;
+      margin-left: 48px;
+      width: 105%;
+   }
+
+   @include mappy-bp(xl){
+      margin-top: -200px;
+      margin-left: 60px;
+   }
+
+   @include mappy-bp(xxl){
+      margin-top: -248px;
+      margin-left: 108px;
+   }
+}
+
+.c-image--landing-overlay{
+   opacity: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: getAppColor(grayscale);
+   animation: landing-image-animate 0.8s getTransition(smoothy);
+
+   &--black{
+      background-color: getAppColor(pallet,green);
+      animation: landing-image-animate 1.1s getTransition(smoothy);
+   }
+}
+
+
+@keyframes landing-image-animate {
+    0% {opacity: 1; transform: translateX(0%);}
+    20% {opacity: 1; transform: translateX(0%);}
+    100% {opacity: 1; transform: translateX(100%);}
+}

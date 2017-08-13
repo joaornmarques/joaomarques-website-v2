@@ -17,6 +17,6 @@
 
 import "./vendor/jquery.waypoints.min.js";
 
-import "./helpers/helloWorld.js";
+import "./helpers/init.js";
 import "./helpers/waypoints.js";
 

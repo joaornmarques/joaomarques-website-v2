@@ -1,0 +1,62 @@
+.c-title{
+   @include font-size(44px,44px);
+   position: relative;
+   display: inline-block;
+   color: white;
+   z-index: 2;
+   overflow: hidden;
+   padding: 0 5px 5px 0;
+
+   @include mappy-bp(sm){
+      @include font-size(60px,60px);
+   }
+
+   @include mappy-bp(mdl){
+      @include font-size(70px,70px);
+   }
+
+   @include mappy-bp(xl){
+      @include font-size(80px,80px);
+   }
+
+   @include mappy-bp(xxl){
+      @include font-size(120px,120px);
+   }
+
+   &--outline{
+      color: transparent;
+      -webkit-text-stroke: 1px white;
+   }
+}
+
+.c-title__overlay{
+   position: absolute;
+   background-color: getAppColor(grayscale,light);
+   opacity: 0;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: visible;
+   animation: overlay-animate 1.3s getTransition(smoothy);
+   z-index: 9;
+}
+
+.c-title__container{
+   animation: container-animate 1.3s;
+   z-index: 1;
+}
+
+@keyframes overlay-animate {
+    0% {opacity: 1; height: 0;}
+    50% {opacity: 1; height: 100%; transform: translateX(0%);}
+    100% {opacity: 1; transform: translateX(110%);}
+}
+
+@keyframes container-animate {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    100% {opacity: 1;}
+}
+

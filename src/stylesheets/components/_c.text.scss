@@ -1,0 +1,14 @@
+.c-text{
+   font-size: 20px;
+   color: white;
+   animation: text-animate 1.3s getTransition(smooth);
+
+   &--breathe-top{
+      margin-top: $g-spacing-unit * 8;
+   }
+}
+
+@keyframes text-animate {
+    0% {opacity: 0; transform: translateY(-32px);}
+    100% {opacity: 1; transform: translateY(0px);}
+}
