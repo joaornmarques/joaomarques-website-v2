@@ -7,13 +7,13 @@
    position: absolute;
    top: 10%;
    overflow-x: hidden;
-   height: 65vh;
-   width: 105%;
+   height: 60vh;
+   width: calc(100% - 1rem);
    background-image: url('../assets/images/profile.jpg');
    background-size: cover;
    background-position: center;
    margin-top: 20px;
-   margin-left: 36px;
+   margin-left: 0;
 
 
 
