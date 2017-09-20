@@ -48,8 +48,8 @@
 }
 
 @keyframes overlay-animate {
-    0% {opacity: 1; height: 0;}
-    50% {opacity: 1; height: 100%; transform: translateX(0%);}
+    0% {opacity: 1; width: 0;}
+    50% {opacity: 1; width: 100%; transform: translateX(0%);}
     100% {opacity: 1; transform: translateX(110%);}
 }
 
