@@ -1,19 +1,3 @@
-$('.c-image--landing').hide();
-$('.c-title').hide();
-$('.c-text').hide();
-
-$('.title-main-js').show();
-
-setTimeout(function(){
-	$('.title-second-js').show();
-}, 200);
-
-setTimeout(function(){
-	$('.text-landing-js').show();
-	$('.c-image--landing').show();
-}, 400);
-
-
 function cssParallax(cont, el, radiusVal){
   $(cont).mousemove(function(event) {
 
@@ -33,6 +17,6 @@ function cssParallax(cont, el, radiusVal){
 }
 
 $(document).ready(function() {
-  cssParallax('.parallax-container', '.parallax-base', 70);
-  cssParallax('.parallax-container.first', '.parallax-base', 70);
+  cssParallax('.c-cube-parallax-container-js', '.c-cube-parallax-base-js', 70);
+  cssParallax('.c-cube-parallax-container-js.first-js', '.c-cube-parallax-base-js', 70);
 });
