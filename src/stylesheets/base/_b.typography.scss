@@ -8,49 +8,21 @@
 //@include font-face($font-family: 'FontNAME', $file-path: 'fontPath', $font-weight: '500', $font-style: 'normal', $RoR: false);
 
 @font-face {
-    font-family: HKGrotesk-Bold;
-    src: url("../assets/fonts/HKGrotesk/700/HKGrotesk-Bold.woff");
+    font-family: Zwizz-Bold;
+    src: url("../assets/fonts/Zwizz/700/Zwizz-Bold.woff");
     font-weight: 700;
     font-style: normal;
 }
 
-
 @font-face {
-    font-family: HKGrotesk-BoldItalic;
-    src: url("../assets/fonts/HKGrotesk/700/HKGrotesk-BoldItalic.woff");
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: HKGrotesk-Medium;
-    src: url("../assets/fonts/HKGrotesk/500/HKGrotesk-Medium.woff");
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: HKGrotesk-MediumItalic;
-    src: url("../assets/fonts/HKGrotesk/500/HKGrotesk-MediumItalic.woff");
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: HKGrotesk-Regular;
-    src: url("../assets/fonts/HKGrotesk/500/HKGrotesk-Regular.woff");
+    font-family: Zwizz-Regular;
+    src: url("../assets/fonts/Zwizz/400/Zwizz-Regular.woff");
     font-weight: 400;
-}
-
-@font-face {
-    font-family: HKGrotesk-Italic;
-    src: url("../assets/fonts/HKGrotesk/500/HKGrotesk-Italic.woff");
-    font-weight: 400;
-    font-style: italic;
 }
 
 
 body{
-	font: normal 1rem/1.5 'HKGrotesk-Medium', Helvetica, sans-serif;
+	font: normal 1rem/1.5 'Zwizz-Regular', Helvetica, sans-serif;
 	letter-spacing: -0.2px;
 	color: getAppColor('grayscale', 'base');
 	 -moz-osx-font-smoothing: grayscale;
@@ -61,7 +33,8 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'HKGrotesk-Bold', sans-serif;
+	font-family: 'Zwizz-Regular', Helvetica, sans-serif;
+   font-weight: 400;
 }
 
 

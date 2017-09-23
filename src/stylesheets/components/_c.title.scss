@@ -1,5 +1,5 @@
 .c-title{
-   @include font-size(44px,44px);
+   @include font-size(40px,52px);
    position: relative;
    display: inline-block;
    color: black;
@@ -8,24 +8,36 @@
    padding: 0 5px 5px 0;
 
    @include mappy-bp(sm){
-      @include font-size(60px,60px);
+      @include font-size(50px,65px);
    }
 
    @include mappy-bp(mdl){
-      @include font-size(70px,70px);
+      @include font-size(60px,78px);
    }
 
    @include mappy-bp(xl){
-      @include font-size(80px,80px);
+      @include font-size(70px,91px);
    }
 
    @include mappy-bp(xxl){
-      @include font-size(120px,120px);
+      @include font-size(80px,104px);
    }
 
    &--outline{
-      color: transparent;
+      color: white;
       -webkit-text-stroke: 1px white;
+   }
+
+   &--bold{
+      font-family: 'Zwizz-Bold', Helvetica, sans-serif;
+      font-weight: 700;
+   }
+
+   &--selectable{
+      &:hover,
+      &:focus{
+         color: getAppColor(brand, base);
+      }
    }
 }
 

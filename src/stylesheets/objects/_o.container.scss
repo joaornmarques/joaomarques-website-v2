@@ -23,17 +23,10 @@ $container-sizes:(
 	display: block;
 	width: 100%;
 	margin: 0 auto;
-	padding: {
-		left: $g-spacing-unit * 2;
-		right: $g-spacing-unit * 2;
-	}
-
+	padding: $g-spacing-unit * 2;
 
 	@include mappy-bp(sm){
-      padding: {
-         left: $g-spacing-unit * 11;
-         right: $g-spacing-unit * 11;
-      }
+      padding: $g-spacing-unit * 4;
 	}
 
 

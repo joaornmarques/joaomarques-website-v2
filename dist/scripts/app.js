@@ -25,8 +25,8 @@ function cssParallax(cont, el, radiusVal){
 }
 
 $(document).ready(function() {
-  cssParallax('.c-cube-parallax-container-js', '.c-cube-parallax-base-js', 70);
-  cssParallax('.c-cube-parallax-container-js.first-js', '.c-cube-parallax-base-js', 70);
+  cssParallax('.c-cube-parallax-detect-js', '.c-cube-parallax-base-js', 70);
+  cssParallax('.c-cube-parallax-detect-js.first-js', '.c-cube-parallax-base-js', 70);
 });
 
 //navbar aside
