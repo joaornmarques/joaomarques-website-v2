@@ -16,6 +16,7 @@
 .c-cube{
    width: 50vw;
    height: 50vw;
+
    transition: transform 2s cubic-bezier(.09,.35,.02,.98);
    @include mappy-bp(sm){
       width: 50vh;
@@ -24,6 +25,9 @@
 }
 
 .c-cube__face{
+   background: url("../assets/images/logo_outline.svg");
+   transition: background 0.3s;
+   background-size: 100% 100%;
    position: absolute;
    width: 100%;
    height: 100%;
@@ -92,6 +96,28 @@
 
 }
 
+//------CUBE INSIDE IMAGE------//
+
+.c-cube__face--bg-default{
+   background: url('../assets/images/dots.gif');
+   background-size: 100% 100%;
+}
+
+.c-cube__face--bg-profile{
+   background: url('../assets/images/profile.jpg');
+   background-size: 100% 100%;
+}
+
+.c-cube__face--bg-sonic{
+   background: url('../assets/images/sonic.gif');
+   background-size: 100% 100%;
+}
+
+.c-cube__face--bg-ws{
+   background: url('../assets/images/ws.jpg');
+   background-size: 100% 100%;
+}
+
 
 //------FACES------//
 
@@ -155,11 +181,20 @@
     to {transform: scale(0)}
 }
 
+@keyframes cube-rotate-in {
+    from {transform: rotateX(0deg) rotateY(0deg);}
+    to {transform: rotateX(45deg) rotateY(45deg);}
+}
+
+@keyframes cube-rotate-out {
+    from {transform: rotateX(45deg) rotateY(45deg);}
+    to {transform: rotateX(0deg) rotateY(0deg);}
+}
+
 //------PARALLAX------//
 
 .c-cube-parallax-base-js div {
-  opacity: .7;
-  background: rgba(0, 0, 0, 0.06);
+  opacity: .75;
 }
 
 .c-cube-parallax-container {

@@ -37,6 +37,10 @@ const paths = {
     vectors: 'src/assets/images/**/*.svg',
     dest: 'dist/assets/images/'
   },
+  sounds: {
+    src:  'src/assets/sounds/**/*.{mp3,wav,flac}',
+    dest: 'dist/assets/sounds/'
+  },
   fonts: {
     src:  'src/assets/fonts/**/{*.woff, *.woff2, *.otf}',
     dest: 'dist/assets/fonts/'
@@ -114,6 +118,12 @@ export function fonts() {
     .pipe(gulp.dest(paths.fonts.dest));
 }
 
+
+/*Copy paste sounds*/
+export function sounds() {
+  return gulp.src(paths.sounds.src, {since: gulp.lastRun('sounds')})
+    .pipe(gulp.dest(paths.sounds.dest));
+}
 
 /*
  * STYESHEETS
@@ -282,6 +292,7 @@ export function criticalCSS(done){
 export function watch() {
   gulp.watch(paths.images.src,  images);
   gulp.watch(paths.images.vectors, vectors);
+  gulp.watch(paths.sounds.src,   sounds);
   gulp.watch(paths.fonts.src,   fonts);
   gulp.watch(paths.styles.src,  styles);
   gulp.watch(paths.scripts.src, scripts);
@@ -301,6 +312,7 @@ const build = gulp.series(
   gulp.parallel(
     vectors,
     images,
+    sounds,
     fonts,
     styles,
     scripts,
