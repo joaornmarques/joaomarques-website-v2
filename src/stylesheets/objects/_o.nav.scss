@@ -7,12 +7,12 @@
    transform: rotate(90deg) translateX(50%) translateY(-100%);
    margin-top: $g-spacing-unit * 3;
    opacity: 0;
+   transition: opacity 0.8s cubic-bezier(.09,.35,.02,.98);
    @include mappy-bp(sm){
       display: block;
    }
 
    &--intro-animate{
-      transition: opacity 0.8s cubic-bezier(.09,.35,.02,.98);
       opacity: 1;
    }
 }

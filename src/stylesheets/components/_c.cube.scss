@@ -1,16 +1,20 @@
 .c-cube-container{
    display: flex;
+   opacity: 1;
    align-items: center;
    justify-content: center;
    width: 100vw;
    height: 100vh;
-   transform: scale(1);
    position: fixed;
    top: 0;
    left: 0;
    bottom: 0;
    right: 0;
-   animation: cube-in 1s ease;
+   transform: scale(0);
+   transition: transform 1s ease;
+   &--intro-animate{
+      transform: scale(1);
+   }
 }
 
 .c-cube{
