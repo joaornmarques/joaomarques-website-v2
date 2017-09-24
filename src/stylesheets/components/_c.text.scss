@@ -13,4 +13,11 @@
    &--sm{
       @include font-size(14px,18.2px);
    }
+
+   &--expand-sm{
+      width: 100%;
+      @include mappy-bp(sm){
+         width: auto;
+      }
+   }
 }

@@ -5,6 +5,10 @@
 .c-image-footer{
    width: 30px;
    height: 30px;
+
+   &--align-r{
+      float: right;
+   }
 }
 
 .c-image-footer-container{
