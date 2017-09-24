@@ -1,5 +1,5 @@
 .c-title{
-   @include font-size(45px,58.5px);
+   @include font-size(40px,52px);
    position: relative;
    display: inline-block;
    color: black;
@@ -8,19 +8,19 @@
    padding: 0 5px 5px 0;
 
    @include mappy-bp(sm){
-      @include font-size(55px,71.5px);
+      @include font-size(50px,65px);
    }
 
    @include mappy-bp(mdl){
-      @include font-size(70px,91px);
+      @include font-size(60px,78px);
    }
 
    @include mappy-bp(xl){
-      @include font-size(80px,104px);
+      @include font-size(70px,91px);
    }
 
    @include mappy-bp(xxl){
-      @include font-size(90px,117px);
+      @include font-size(80px,104px);
    }
 
    &--outline{
