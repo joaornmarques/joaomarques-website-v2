@@ -8,3 +8,9 @@ $u-text-alignment-breakpoints-list: $grid-breakpoints !default;
       .u-hidden-\@#{$breakpoint} { display: none; }
    }
 }
+
+@each $breakpoint in $u-text-alignment-breakpoints-list {
+   @include mappy-bp(max-width $breakpoint){
+      .u-visible-\@#{$breakpoint} { display: none; }
+   }
+}

@@ -118,6 +118,26 @@
    background-size: 100% 100%;
 }
 
+.c-cube__face--bg-1w4g{
+   background: url('../assets/images/1word4gifs.jpg');
+   background-size: 100% 100%;
+}
+
+.c-cube__face--bg-mix{
+   background: url('../assets/images/mixtape.jpg');
+   background-size: 100% 100%;
+}
+
+.c-cube__face--bg-mauvais{
+   background: url('../assets/images/mauvais.jpg');
+   background-size: 100% 100%;
+}
+
+.c-cube__face--bg-shift{
+   background: url('../assets/images/shift.jpg');
+   background-size: 100% 100%;
+}
+
 
 //------FACES------//
 
@@ -172,13 +192,13 @@
 }
 
 @keyframes cube-in {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
+    from {-moz-transform: scale(0); -webkit-transform: scale(0)}
+    to {-moz-transform: scale(1); -webkit-transform: scale(1)}
 }
 
 @keyframes cube-out {
-    from {transform: scale(1)}
-    to {transform: scale(0)}
+    from {-moz-transform: scale(1); -webkit-transform: scale(1)}
+    to {-moz-transform: scale(0); -webkit-transform: scale(0)}
 }
 
 @keyframes cube-rotate-in {

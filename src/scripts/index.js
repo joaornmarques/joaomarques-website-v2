@@ -18,5 +18,6 @@
 import "./vendor/jquery.waypoints.min.js";
 
 import "./helpers/init.js";
+import "./helpers/cube.js";
 import "./helpers/waypoints.js";
 

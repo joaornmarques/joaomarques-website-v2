@@ -91,4 +91,24 @@ $button-base-radius: 44px;
     }
 }
 
+.c-note-button{
+   font-family: 'Space Mono', monospace;
+   font-weight: 400;
+   font-size: 18px;
+   color: black;
+   text-decoration: none;
+   border-bottom: solid 1px black;
+   transition: 0.2s;
+
+   &:hover,
+   &:focus{
+      color: getAppColor(brand, base);
+      border-bottom-color: getAppColor(brand, base);
+   }
+
+   &--no-underline{
+      border-bottom: none;
+   }
+}
+
 

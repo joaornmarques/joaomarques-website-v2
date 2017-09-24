@@ -24,12 +24,11 @@ $container-sizes:(
 	width: 100%;
 	margin: 0 auto;
 	padding: $g-spacing-unit * 2;
+   opacity: 0;
 
 	@include mappy-bp(sm){
       padding: $g-spacing-unit * 4;
 	}
-
-
 
 	&--flush{
 		padding: {
@@ -37,4 +36,10 @@ $container-sizes:(
 			right: 0;
 		}
 	}
+
+
+   &--intro-animate{
+      transition: opacity 0.8s cubic-bezier(.09,.35,.02,.98);
+      opacity: 1;
+   }
 }

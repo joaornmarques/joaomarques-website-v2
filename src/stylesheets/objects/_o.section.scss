@@ -1,5 +1,4 @@
 .o-section{
-   min-height: 100vh;
    padding:{
       top: $g-baseline;
       bottom: $g-baseline;
@@ -8,6 +7,10 @@
    @include mappy-bp(sm){
       top: $g-baseline * 2;
       bottom: $g-baseline * 2;
+   }
+
+   &--breathe-top{
+      padding-top: $g-baseline * 4;
    }
 }
 
