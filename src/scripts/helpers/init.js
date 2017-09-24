@@ -6,6 +6,7 @@ $(function() {
 	$(window).on('load', function(){
 		$('.body-js').show();
 		$('.o-container').addClass('o-container--intro-animate');
+		$('.o-nav').addClass('o-nav--intro-animate');
 	});
 });
 
