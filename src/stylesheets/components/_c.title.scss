@@ -46,8 +46,12 @@
       }
    }
 
+   &--breathe{
+      margin: ($g-spacing-unit * 16) 0 ($g-spacing-unit * 2) 0;
+   }
+
    &--h2{
-      @include font-size(28px,36.4px);
+      @include font-size(30px,39px);
 
       @include mappy-bp(sm){
          @include font-size(36px,46.8px);
@@ -67,7 +71,7 @@
    }
 
    &--h3{
-      @include font-size(22px,28.6px);
+      @include font-size(24px,31.2px);
 
       @include mappy-bp(sm){
          @include font-size(32px,41.6px);
@@ -83,6 +87,14 @@
 
       @include mappy-bp(xxl){
          @include font-size(40px,52px);
+      }
+   }
+
+   &--h4{
+      @include font-size(20px,26px);
+
+      @include mappy-bp(sm){
+         @include font-size(22px,28.6px);
       }
    }
 }

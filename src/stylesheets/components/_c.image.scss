@@ -1,5 +1,8 @@
 .c-image{
-
+   width: 100%;
+   &--outline{
+      border: solid 1px black;
+   }
 }
 
 .c-image-footer{

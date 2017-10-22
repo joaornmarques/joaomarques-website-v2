@@ -38,3 +38,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+::selection {
+  background: getAppColor(brand, base); /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: getAppColor(brand, base); /* Gecko Browsers */
+  color: white;
+}

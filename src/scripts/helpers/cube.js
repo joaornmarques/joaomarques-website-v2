@@ -110,3 +110,16 @@ $('.cube-bg-shift-js').mouseleave(function(){
 	$('.c-cube__face--inside').removeClass('c-cube__face--bg-shift').addClass('c-cube__face--bg-default');
 });
 
+
+/*-----------------------------
+------Cube show trigger--------
+-----------------------------*/
+
+$('.hover-show-cube-js').hover(function(){
+	$('.c-cube-container').addClass('c-cube-container--intro-animate');
+});
+
+$('.hover-show-cube-js').mouseleave(function(){
+	$('.c-cube-container').removeClass('c-cube-container--intro-animate');
+});
+

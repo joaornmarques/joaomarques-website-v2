@@ -12,9 +12,11 @@ $(function() {
 		$('.body-js').show();
 		$('.o-container').addClass('o-container--intro-animate');
 		$('.o-nav').addClass('o-nav--intro-animate');
-		setTimeout(function() {
-			$('.c-cube-container').addClass('c-cube-container--intro-animate');
-		}, 500);
+		if($('.landing-js').is(':visible')){
+			setTimeout(function() {
+				$('.c-cube-container').addClass('c-cube-container--intro-animate');
+			}, 500);
+		}
 	});
 });
 
@@ -27,19 +29,19 @@ var hoverSound = document.createElement('audio');
 var clickSound = document.createElement('audio');
 
 $(document).ready(function() {
-  hoverSound.setAttribute('src', 'assets/sounds/hover.wav');
-  clickSound.setAttribute('src', 'assets/sounds/click.wav');
-  hoverSound.volume = 0.3;
-  clickSound.volume = 0.2;
+	hoverSound.setAttribute('src', 'assets/sounds/hover.wav');
+	clickSound.setAttribute('src', 'assets/sounds/click.wav');
+	hoverSound.volume = 0.3;
+	clickSound.volume = 0.2;
 
-  $('.hover-sound-js').hover(function(){
-  	hoverSound.play();
-  });
+	$('.hover-sound-js').hover(function(){
+		hoverSound.play();
+	});
 
-  $('a, .click-sound-js').click(function(){
-  	hoverSound.pause();
-  	clickSound.play();
-  });
+	$('a, .click-sound-js').click(function(){
+		hoverSound.pause();
+		clickSound.play();
+	});
 
 });
 
@@ -57,16 +59,16 @@ $(function() {
 			evt.preventDefault();
 			var link = $(this).attr("href");
 
-			$('.o-container').removeClass('o-container--intro-animate');
+			$('.o-container').addClass('o-container--out-animate');
 			$('.o-nav').removeClass('o-nav--intro-animate');
 			$('.c-cube-container').removeClass('c-cube-container--intro-animate');
 			hoverSound.volume = 0;
 
-	    setTimeout(function() {
-	      window.location.href = link;
-	    }, 1200);
+			setTimeout(function() {
+				window.location.href = link;
+			}, 1200);
 
-	  }
+		}
 
 	});
 });
@@ -181,6 +183,19 @@ $('.cube-bg-shift-js').hover(function(){
 
 $('.cube-bg-shift-js').mouseleave(function(){
 	$('.c-cube__face--inside').removeClass('c-cube__face--bg-shift').addClass('c-cube__face--bg-default');
+});
+
+
+/*-----------------------------
+------Cube show trigger--------
+-----------------------------*/
+
+$('.hover-show-cube-js').hover(function(){
+	$('.c-cube-container').addClass('c-cube-container--intro-animate');
+});
+
+$('.hover-show-cube-js').mouseleave(function(){
+	$('.c-cube-container').removeClass('c-cube-container--intro-animate');
 });
 
 /*!
