@@ -50,6 +50,17 @@
       margin: ($g-spacing-unit * 16) 0 ($g-spacing-unit * 2) 0;
    }
 
+   &--description{
+      margin-top: $g-spacing-unit * 2;
+      margin-bottom: $g-spacing-unit * 2;
+      padding: 0;
+
+      @include mappy-bp(sm){
+         margin-top: 0;
+      }
+
+   }
+
    &--h2{
       @include font-size(30px,39px);
 
