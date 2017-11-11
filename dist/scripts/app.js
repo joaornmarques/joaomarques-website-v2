@@ -185,6 +185,16 @@ $('.cube-bg-shift-js').mouseleave(function(){
 	$('.c-cube__face--inside').removeClass('c-cube__face--bg-shift').addClass('c-cube__face--bg-default');
 });
 
+//zelda
+
+$('.cube-bg-zelda-js').hover(function(){
+	$('.c-cube__face--inside').removeClass('c-cube__face--bg-default').addClass('c-cube__face--bg-zelda');
+});
+
+$('.cube-bg-zelda-js').mouseleave(function(){
+	$('.c-cube__face--inside').removeClass('c-cube__face--bg-zelda').addClass('c-cube__face--bg-default');
+});
+
 
 /*-----------------------------
 ------Cube show trigger--------
