@@ -61,6 +61,16 @@
 
    }
 
+   &--link{
+      text-decoration: underline;
+      transition: 0.2s;
+      &:hover,
+      &:focus{
+        color: getAppColor(brand);
+        text-decoration: underline;
+      }
+   }
+
    &--h2{
       @include font-size(30px,39px);
 

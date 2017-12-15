@@ -106,9 +106,6 @@ function cssParallax(cont, el, radiusVal){
       cy = Math.ceil($(window).height() / 2.0);
       dx = event.clientX - cx;
       dy = event.clientY - cy;
-
-      console.log(event.clientX);
-      console.log(event.clientY);
       tiltx = (dy / cy);
       tilty = - (dx / cx);
       radius = Math.sqrt(Math.pow(tiltx,2) + Math.pow(tilty,2));
