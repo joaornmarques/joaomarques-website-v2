@@ -10,7 +10,7 @@ $(function() {
 		if($('.landing-js').is(':visible')){
 			setTimeout(function() {
 				$('.c-cube-container').addClass('c-cube-container--intro-animate');
-			}, 500);
+			}, 1500);
 		}
 	});
 });
@@ -65,10 +65,23 @@ $(function() {
 
 		}
 
+		if ($(this).hasClass("game-click-js")) {
+
+			evt.preventDefault();
+			var vidLinks=[
+			"https://www.youtube.com/embed/9Q0NCY-zhGg?autoplay=1",
+			"https://www.youtube.com/embed/Z6hjG6MCcZ8?autoplay=1",
+			"https://www.youtube.com/embed/gQeOYszcPh0?autoplay=1",
+			"https://www.youtube.com/embed/wE8uiAZFOvU?autoplay=1",
+			"https://www.youtube.com/embed/3Req5SQ6Rn4?autoplay=1"]
+
+			var randLink = vidLinks[Math.floor(Math.random() * vidLinks.length)];
+			window.open(randLink);
+
+		}
+
 	});
 });
-
-
 
 
 

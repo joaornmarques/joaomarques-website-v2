@@ -20,12 +20,16 @@
 .c-cube{
    width: 50vw;
    height: 50vw;
-
-   transition: transform 2s cubic-bezier(.09,.35,.02,.98);
+   transition: transform 4s cubic-bezier(.09,.35,.02,.98);
    @include mappy-bp(sm){
       width: 50vh;
       height: 50vh;
    }
+}
+
+@keyframes infinite-rotate {
+   from{transform: rotateX(0deg) rotateY(0deg);}
+   to{transform: rotateX(360deg) rotateY(720deg);}
 }
 
 .c-cube__face{
@@ -113,7 +117,7 @@
 }
 
 .c-cube__face--bg-sonic{
-   background: url('../assets/images/sonic.jpg');
+   background: url('../assets/images/retro.gif');
    background-size: 100% 100%;
 }
 

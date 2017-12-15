@@ -12,19 +12,22 @@ setTimeout(function(){
 
 function cssParallax(cont, el, radiusVal){
   $(cont).mousemove(function(event) {
-
       cx = Math.ceil($(window).width() / 2.0);
       cy = Math.ceil($(window).height() / 2.0);
-      dx = event.pageX - cx;
-      dy = event.pageY - cy;
+      dx = event.clientX - cx;
+      dy = event.clientY - cy;
 
+      console.log(event.clientX);
+      console.log(event.clientY);
       tiltx = (dy / cy);
       tilty = - (dx / cx);
       radius = Math.sqrt(Math.pow(tiltx,2) + Math.pow(tilty,2));
       degree = (radius * radiusVal);
+      degreeX = tiltx * degree;
+      degreeY = tilty * degree;
 
-      $(el, cont).css('-webkit-transform','rotate3d(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)');
-      $(el, cont).css('-moz-transform','rotate3d(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)');
+      $(el, cont).css('-webkit-transform','rotateX(' + degreeX + 'deg) rotateY(' + degreeY + 'deg)');
+      $(el, cont).css('-moz-transform','rotateX(' + degreeX + 'deg) rotateY(' + degreeY + 'deg)');
   });
 }
 
@@ -32,9 +35,6 @@ $(document).ready(function() {
   cssParallax('.c-cube-parallax-detect-js', '.c-cube-parallax-base-js', 70);
   cssParallax('.c-cube-parallax-detect-js.first-js', '.c-cube-parallax-base-js', 70);
 });
-
-
-
 
 /*-----------------------------
 ------Cube image triggers------
