@@ -24,8 +24,8 @@ var hoverSound = document.createElement('audio');
 var clickSound = document.createElement('audio');
 
 $(document).ready(function() {
-	hoverSound.setAttribute('src', 'assets/sounds/hover.wav');
-	clickSound.setAttribute('src', 'assets/sounds/click.wav');
+	hoverSound.setAttribute('src', '/assets/sounds/hover.wav');
+	clickSound.setAttribute('src', '/assets/sounds/click.wav');
 	hoverSound.volume = 0.3;
 	clickSound.volume = 0.2;
 
