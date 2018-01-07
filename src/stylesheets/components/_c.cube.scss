@@ -10,7 +10,7 @@
    left: 0;
    bottom: 0;
    right: 0;
-   z-index: -1;
+   z-index: 1;
    transform: scale(0);
    transition: transform 0.5s ease;
    &--intro-animate{
@@ -34,6 +34,13 @@
          background-size: 100% 100%;
       }
    }
+
+   &--dark{
+      .c-cube__face--bg-default{
+         background: url('../assets/images/grid.png');
+         background-size: 100% 100%;
+      }
+   }
 }
 
 @keyframes infinite-rotate {
@@ -54,6 +61,10 @@
        -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none;
+
+   &--dark{
+      background: url("../assets/images/logo_outline-dark.svg");
+   }
 }
 
 .c-cube__face--inside{
@@ -155,8 +166,38 @@
    background-size: 100% 100%;
 }
 
-.c-cube__face--bg-zelda{
-   background: url('../assets/images/zelda.jpg');
+.c-cube__face--bg-contact{
+   background: url('../assets/images/c.jpg');
+   background-size: 100% 100%;
+}
+
+.c-cube__face--bg-c-insta{
+   background: url('../assets/images/c-insta.jpg');
+   background-size: 100% 100%;
+}
+
+.c-cube__face--bg-c-fb{
+   background: url('../assets/images/c-fb.jpg');
+   background-size: 100% 100%;
+}
+
+.c-cube__face--bg-c-tw{
+   background: url('../assets/images/c-tw.jpg');
+   background-size: 100% 100%;
+}
+
+.c-cube__face--bg-c-be{
+   background: url('../assets/images/c-be.jpg');
+   background-size: 100% 100%;
+}
+
+.c-cube__face--bg-c-vimeo{
+   background: url('../assets/images/c-vimeo.jpg');
+   background-size: 100% 100%;
+}
+
+.c-cube__face--bg-c-gh{
+   background: url('../assets/images/c-gh.jpg');
    background-size: 100% 100%;
 }
 

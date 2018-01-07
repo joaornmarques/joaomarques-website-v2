@@ -46,6 +46,28 @@
       }
    }
 
+   &--selectable-inverse{
+      color: white;
+      &:hover,
+      &:focus{
+         color: getAppColor(grayscale);
+         -webkit-text-stroke: 1px white;
+
+         .c-text-note{
+            color: white;
+            -webkit-text-stroke: 0px;
+         }
+      }
+   }
+
+   &--selectable-sm{
+      &:hover,
+      &:focus{
+         color: getAppColor(brand);
+         transition: 0.2s;
+      }
+   }
+
    &--breathe{
       margin: ($g-spacing-unit * 16) 0 ($g-spacing-unit * 2) 0;
    }

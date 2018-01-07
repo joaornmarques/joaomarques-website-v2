@@ -17,20 +17,66 @@
     	{
 	      "slug"           : "index",
 	      "name"           : "Home",
-	      "title"          : "Welcome home — joaomarques-website",
-	      "description"    : "Generated with Qnorr",
-	      "og_title"       : "optional, if you want a different page title for social media aka clickbait else default page title",
-	      "og_description" : "optional, if you want a different page description for social media  else default page description",
+	      "title"          : "João Marques — Home",
+	      "description"    : "Multimedia Designer & Front-end Developer",
+	      "og_title"       : "João Marques",
+	      "og_description" : "A Multimedia Designer, Front-end Designer and retro gaming geek.",
 	      "og_image"       : "asbolute_url_to_image_or_logo"
 	   },
 	   {
-	      "slug"           : "this should match to filename without extension",
-	      "name"           : "A name that would be displayed on a menu",
-	      "title"          : "Unique title",
-	      "description"    : "Unique description for the page",
-	      "og_title"       : "optional, if you want a different page title for social media aka clickbait else default page title",
-	      "og_description" : "optional, if you want a different page description for social media  else default page description",
+	      "slug"           : "about",
+	      "name"           : "About",
+	      "title"          : "João Marques — About",
+	      "description"    : "Multimedia Designer & Front-end Developer",
+	      "og_title"       : "João Marques — About",
+	      "og_description" : "A Multimedia Designer, Front-end Designer and retro gaming geek.",
+	      "og_image"       : "asbolute_url_to_image_or_logo, defaults to defaults.logo"
+	   },
+	   {
+	      "slug"           : "contact",
+	      "name"           : "Contact",
+	      "title"          : "João Marques — Contact",
+	      "description"    : "Multimedia Designer & Front-end Developer",
+	      "og_title"       : "João Marques — Contact",
+	      "og_description" : "A Multimedia Designer, Front-end Designer and retro gaming geek.",
+	      "og_image"       : "asbolute_url_to_image_or_logo, defaults to defaults.logo"
+	   },
+	   {
+	      "slug"           : "1word4gifs",
+	      "name"           : "1 Word 4 Gifs",
+	      "title"          : "João Marques — 1 Word 4 Gifs",
+	      "description"    : "UX/UI design & Front-end development / Web game created on Shift APPens, a 48 hours hackathon.",
+	      "og_title"       : "João Marques — 1 Word 4 Gifs",
+	      "og_description" : "UX/UI design & Front-end development / Web game created on Shift APPens, a 48 hours hackathon.",
+	      "og_image"       : "asbolute_url_to_image_or_logo, defaults to defaults.logo"
+	   },
+	   {
+	      "slug"           : "mauvais",
+	      "name"           : "Mauvais Sang",
+	      "title"          : "João Marques — Mauvais Sang",
+	      "description"    : "Motion Design / Visual score of an excert of the film Mauvais Sang, from Leos Carax.",
+	      "og_title"       : "João Marques — Mauvais Sang",
+	      "og_description" : "Motion Design / Visual score of an excert of the film Mauvais Sang, from Leos Carax.",
+	      "og_image"       : "asbolute_url_to_image_or_logo, defaults to defaults.logo"
+	   },
+	   {
+	      "slug"           : "mixtapes",
+	      "name"           : "Mixtapes covers",
+	      "title"          : "João Marques — Mixtapes covers",
+	      "description"    : "Graphic Design / Covers for mixtapes and playlists curated by me on Soundcloud and Spotify.",
+	      "og_title"       : "João Marques — Mixtapes covers",
+	      "og_description" : "Graphic Design / Covers for mixtapes and playlists curated by me on Soundcloud and Spotify.",
+	      "og_image"       : "asbolute_url_to_image_or_logo, defaults to defaults.logo"
+	   },
+	   {
+	      "slug"           : "shiftappens",
+	      "name"           : "Shift APPens",
+	      "title"          : "João Marques — Shift APPens",
+	      "description"    : "Branding & Graphic design / Identity for the 2016 edition of Shift APPens hackathon.",
+	      "og_title"       : "João Marques — Shift APPens",
+	      "og_description" : "Branding & Graphic design / Identity for the 2016 edition of Shift APPens hackathon.",
 	      "og_image"       : "asbolute_url_to_image_or_logo, defaults to defaults.logo"
 	   }
+
 	]
 }

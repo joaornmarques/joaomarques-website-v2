@@ -51,5 +51,8 @@ $container-sizes:(
       @include mappy-bp(sm){
          padding: $g-spacing-unit * 4;
       }
+      section{
+         position: static;
+      }
    }
 }

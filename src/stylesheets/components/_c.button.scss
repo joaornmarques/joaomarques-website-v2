@@ -109,6 +109,11 @@ $button-base-radius: 44px;
    &--no-underline{
       border-bottom: none;
    }
+
+   &--inverse{
+      color: white;
+      border-bottom-color: white;
+   }
 }
 
 

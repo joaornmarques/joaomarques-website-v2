@@ -29,6 +29,11 @@
    .o-skeleton__head,
    .o-skeleton__feet {
    	flex: none;
+      z-index: 2;
+   }
+
+   .o-skeleton__feet{
+      z-index: -1;
    }
 
    .o-skeleton__body{
