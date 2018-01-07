@@ -36,7 +36,7 @@
    &--selectable{
       &:hover,
       &:focus{
-         color: white;
+         color: transparent;
          -webkit-text-stroke: 1px black;
 
          .c-text-note{
@@ -50,7 +50,7 @@
       color: white;
       &:hover,
       &:focus{
-         color: getAppColor(grayscale);
+         color: transparent;
          -webkit-text-stroke: 1px white;
 
          .c-text-note{

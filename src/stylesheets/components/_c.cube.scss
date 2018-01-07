@@ -37,7 +37,8 @@
 
    &--dark{
       .c-cube__face--bg-default{
-         background: url('../assets/images/grid.png');
+         background: url('../assets/images/dots-invert.gif');
+         opacity: 0.2;
          background-size: 100% 100%;
       }
    }
