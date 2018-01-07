@@ -1,16 +1,20 @@
 {
 	"defaults": {
-		"app_name": "joaomarques-website",
-		"keywords": "iot",
-		"author"  : "",
-		"domain"  : "",
-		"logo": "path_to_logo",
+		"app_name": "joaomarques.website",
+		"keywords": "joao, marques, multimedia, designer, front-end, developer, portfolio, cube",
+		"author"  : "João Marques . 2018",
+		"domain"  : "http://joaomarques.website/",
+		"logo": "http://joaomarques.website/assets/images/jm_logo.svg",
 		"og": {
-			"site_name": "joaomarques-website"
+			"site_name": "joaomarques.website"
 		},
 		"social": {
-			"fb_app_id": "",
-			"fb_twitter_site": ""
+			"twitter_site": "@joaornmarques",
+			"twitter_title": "João Marques",
+			"twitter_description": "Multimedia Designer, Front-end Designer and retro gaming geek.",
+			"twitter_card": "summary_large_image",
+			"twitter_image": "http://joaomarques.website/assets/images/thumbnail.jpg",
+			"twitter_image_alt": "João Marques"
 		}
 	},
 	"pages": [
@@ -20,8 +24,8 @@
 	      "title"          : "João Marques — Home",
 	      "description"    : "Multimedia Designer & Front-end Developer",
 	      "og_title"       : "João Marques",
-	      "og_description" : "A Multimedia Designer, Front-end Designer and retro gaming geek.",
-	      "og_image"       : "asbolute_url_to_image_or_logo"
+	      "og_description" : "Multimedia Designer, Front-end Designer and retro gaming geek.",
+	      "og_image"       : "http://joaomarques.website/assets/images/thumbnail.jpg"
 	   },
 	   {
 	      "slug"           : "about",
@@ -29,8 +33,8 @@
 	      "title"          : "João Marques — About",
 	      "description"    : "Multimedia Designer & Front-end Developer",
 	      "og_title"       : "João Marques — About",
-	      "og_description" : "A Multimedia Designer, Front-end Designer and retro gaming geek.",
-	      "og_image"       : "asbolute_url_to_image_or_logo, defaults to defaults.logo"
+	      "og_description" : "Multimedia Designer, Front-end Designer and retro gaming geek.",
+	      "og_image"       : "http://joaomarques.website/assets/images/thumbnail.jpg"
 	   },
 	   {
 	      "slug"           : "contact",
@@ -38,8 +42,8 @@
 	      "title"          : "João Marques — Contact",
 	      "description"    : "Multimedia Designer & Front-end Developer",
 	      "og_title"       : "João Marques — Contact",
-	      "og_description" : "A Multimedia Designer, Front-end Designer and retro gaming geek.",
-	      "og_image"       : "asbolute_url_to_image_or_logo, defaults to defaults.logo"
+	      "og_description" : "Multimedia Designer, Front-end Designer and retro gaming geek.",
+	      "og_image"       : "http://joaomarques.website/assets/images/thumbnail.jpg"
 	   },
 	   {
 	      "slug"           : "1word4gifs",
@@ -48,7 +52,7 @@
 	      "description"    : "UX/UI design & Front-end development / Web game created on Shift APPens, a 48 hours hackathon.",
 	      "og_title"       : "João Marques — 1 Word 4 Gifs",
 	      "og_description" : "UX/UI design & Front-end development / Web game created on Shift APPens, a 48 hours hackathon.",
-	      "og_image"       : "asbolute_url_to_image_or_logo, defaults to defaults.logo"
+	      "og_image"       : "http://joaomarques.website/assets/images/thumbnail-1w4g.jpg"
 	   },
 	   {
 	      "slug"           : "mauvais",
@@ -57,7 +61,7 @@
 	      "description"    : "Motion Design / Visual score of an excert of the film Mauvais Sang, from Leos Carax.",
 	      "og_title"       : "João Marques — Mauvais Sang",
 	      "og_description" : "Motion Design / Visual score of an excert of the film Mauvais Sang, from Leos Carax.",
-	      "og_image"       : "asbolute_url_to_image_or_logo, defaults to defaults.logo"
+	      "og_image"       : "http://joaomarques.website/assets/images/thumbnail-mauvais.jpg"
 	   },
 	   {
 	      "slug"           : "mixtapes",
@@ -66,7 +70,7 @@
 	      "description"    : "Graphic Design / Covers for mixtapes and playlists curated by me on Soundcloud and Spotify.",
 	      "og_title"       : "João Marques — Mixtapes covers",
 	      "og_description" : "Graphic Design / Covers for mixtapes and playlists curated by me on Soundcloud and Spotify.",
-	      "og_image"       : "asbolute_url_to_image_or_logo, defaults to defaults.logo"
+	      "og_image"       : "http://joaomarques.website/assets/images/thumbnail-mixtapes.jpg"
 	   },
 	   {
 	      "slug"           : "shiftappens",
@@ -75,7 +79,7 @@
 	      "description"    : "Branding & Graphic design / Identity for the 2016 edition of Shift APPens hackathon.",
 	      "og_title"       : "João Marques — Shift APPens",
 	      "og_description" : "Branding & Graphic design / Identity for the 2016 edition of Shift APPens hackathon.",
-	      "og_image"       : "asbolute_url_to_image_or_logo, defaults to defaults.logo"
+	      "og_image"       : "http://joaomarques.website/assets/images/thumbnail-shift.jpg"
 	   }
 
 	]

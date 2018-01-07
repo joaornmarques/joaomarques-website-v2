@@ -18,15 +18,15 @@
       <meta property="og:description" content="{{#if this.og_description}}{{this.og_description}}{{else}}{{this.description}}{{/if}}">
       <meta property="og:image" content="{{#if this.og_image}}{{this.og_image}}{{else}}{{../meta.defaults.logo}}{{/if}}">
       <meta property="og:url" content="{{../meta.defaults.domain}}{{this.slug}}">
+      <meta name="og:site_name" content="{{../meta.defaults.og.site_name}}">
 
-      <!--  Non-Essential, But Recommended -->
-      <meta name="og:site_name" content="{{../meta.og.site_name}}">
-      <meta name="twitter:image:alt" content="{{../meta.social.twitter_image_alt}}">
-      <meta name="twitter:card" content="{{../meta.social.twitter_card}}">
-
-      <!--  Non-Essential, But Required for Analytics -->
-      <meta property="fb:app_id" content="{{../meta.social.fb_app_id}}" />
-      <meta name="twitter:site" content="{{../meta.social_twitter_site}}">
+      <!--  Twitter Tags -->
+      <meta name="twitter:title" content="{{../meta.defaults.social.twitter_title}}" />
+      <meta name="twitter:description" content="{{../meta.defaults.social.twitter_description}}">
+      <meta name="twitter:image" content="{{../meta.defaults.social.twitter_image}}">
+      <meta name="twitter:image:alt" content="{{../meta.defaults.social.twitter_image_alt}}">
+      <meta name="twitter:card" content="{{../meta.defaults.social.twitter_card}}">
+      <meta name="twitter:site" content="{{../meta.defaults.social.twitter_site}}">
 
    {{/ifpage}}
 {{/each}}
