@@ -1,5 +1,5 @@
 # João Marques website
-My future personal website, work in progress.
+My personal website — [joaomarques.website](http://joaomarques.website).
 
 ### Requirements
 1. A computer.
@@ -20,12 +20,6 @@ My future personal website, work in progress.
 At the moment, only GitHub pages are supported to host your site/app. Maybe it makes sense to support other free platforms like [Now.sh](https://zeit.co/now) in a near future.
 
 1. `npm run deploy` will do all the magic. It assumes your current git repo as the destination.
-
-Already bought a domain? 👌
-
-1. Add it to CNAME in the `src/CNAME` file.
-1. Config your domain register service to point to githubPages. Here's how to do it on [NameCheap](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages);
-1. Deploy it again
 
 ### Features
 
