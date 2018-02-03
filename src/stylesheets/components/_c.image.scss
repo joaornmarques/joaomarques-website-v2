@@ -37,6 +37,11 @@
    }
 }
 
+.c-image-width-logo{
+   width: $g-spacing-unit * 24;
+   height: auto;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
