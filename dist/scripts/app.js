@@ -197,6 +197,16 @@ $('.cube-bg-shift-js').mouseleave(function(){
 	$('.c-cube__face--inside').removeClass('c-cube__face--bg-shift').addClass('c-cube__face--bg-default');
 });
 
+//ruc
+
+$('.cube-bg-ruc-js').hover(function(){
+	$('.c-cube__face--inside').removeClass('c-cube__face--bg-default').addClass('c-cube__face--bg-ruc');
+});
+
+$('.cube-bg-ruc-js').mouseleave(function(){
+	$('.c-cube__face--inside').removeClass('c-cube__face--bg-ruc').addClass('c-cube__face--bg-default');
+});
+
 //contact
 
 $('.cube-bg-contact-js').hover(function(){

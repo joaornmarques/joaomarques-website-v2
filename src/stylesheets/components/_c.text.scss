@@ -39,6 +39,16 @@
       @include font-size(14px,18.2px);
    }
 
+   &--label{
+      @include font-size(14px,24px);
+      border: solid 1px black;
+      padding: 0 $g-spacing-unit / 1.5;
+
+      @include mappy-bp(sm){
+         @include font-size(16px,24px);
+      }
+   }
+
    &--expand-sm{
       width: 100%;
       @include mappy-bp(sm){
