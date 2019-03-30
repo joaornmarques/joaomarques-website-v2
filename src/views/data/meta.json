@@ -80,6 +80,15 @@
 	      "og_title"       : "João Marques — Shift APPens",
 	      "og_description" : "Branding & Graphic design / Identity for the 2016 edition of Shift APPens hackathon.",
 	      "og_image"       : "http://joaomarques.website/assets/images/thumbnail-shift.jpg"
+	   },
+		 {
+	      "slug"           : "18of18",
+	      "name"           : "18 of 18'",
+	      "title"          : "18 of 18' — João Marques Blog",
+	      "description"    : "Eighteen albums that made my year in music.",
+	      "og_title"       : "18 of 18' — João Marques Blog",
+	      "og_description" : "Eighteen albums that made my year in music.",
+	      "og_image"       : "http://joaomarques.website/assets/images/thumbnail-18_of_18.jpg"
 	   }
 
 	]
