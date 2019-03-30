@@ -114,6 +114,19 @@ $button-base-radius: 44px;
       color: white;
       border-bottom-color: white;
    }
+
+   &--green{
+      color: getAppColor(pallet, green);
+      border-bottom-color: getAppColor(pallet, green);
+   }
+
+   &--brand{
+      color: getAppColor(brand);
+      border-bottom-color: getAppColor(brand);
+      &:hover,
+      &:focus{
+         color: getAppColor(pallet, green);
+         border-bottom-color: getAppColor(pallet, green);
+      }
+   }
 }
-
-

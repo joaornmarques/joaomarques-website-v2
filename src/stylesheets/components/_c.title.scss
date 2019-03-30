@@ -60,6 +60,20 @@
       }
    }
 
+   &--selectable-green{
+      color: getAppColor(pallet, green);
+      &:hover,
+      &:focus{
+         color: transparent;
+         -webkit-text-stroke: 1px getAppColor(pallet, green);
+
+         .c-text-note{
+            color: getAppColor(pallet, green);
+            -webkit-text-stroke: 0px;
+         }
+      }
+   }
+
    &--selectable-sm{
       &:hover,
       &:focus{

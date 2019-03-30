@@ -59,3 +59,17 @@
     width: 100%;
     height: 100%;
 }
+
+.c-image-18-18{
+   width: 100%;
+
+   @include mappy-bp(sm){
+      width: 83%;
+   }
+}
+
+.c-image-18-18-cover{
+   filter: grayscale(100%);
+   width: 40%;
+   opacity: 0.3;
+}

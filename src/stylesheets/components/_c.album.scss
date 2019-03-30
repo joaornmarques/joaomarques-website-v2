@@ -1,0 +1,69 @@
+.c-album-section{
+   margin-bottom: $g-spacing-unit * 18;
+}
+
+.c-album{
+   position: relative;
+   width: 100%;
+   img {
+      width: 100%;
+   }
+   @include mappy-bp(sm){
+      width: 80%;
+   }
+}
+
+.c-album__rank{
+   @include font-size(50px,65px);
+   font-family: 'Space Mono', monospace;
+   position: relative;
+   float: right;
+   transform: translate(50%, -50%);
+   display: inline-block;
+   color: getAppColor(pallet, green);
+   z-index: 2;
+   overflow: hidden;
+   padding: 0px;
+   text-shadow: -6px -6px 0px getAppColor(grayscale);
+
+   @include mappy-bp(sm){
+      @include font-size(60px,78px);
+   }
+
+   @include mappy-bp(mdl){
+      @include font-size(70px,91px);
+   }
+
+   @include mappy-bp(xl){
+      @include font-size(80px,104px);
+   }
+
+   @include mappy-bp(xxl){
+      @include font-size(90px,117px);
+   }
+}
+
+.c-album__link{
+   color: getAppColor(brand);
+   text-decoration: underline;
+   transition: 0.2s ease;
+   &:hover{
+      color: getAppColor(pallet, green);
+   }
+}
+
+.c-album__link--green{
+   color: getAppColor(pallet, green);
+   text-decoration: underline;
+   transition: 0.2s ease;
+   &:hover{
+      color: getAppColor(brand);
+   }
+}
+
+.c-album--cover{
+   width: 80%;
+   @include mappy-bp(sm){
+      width: 80%;
+   }
+}

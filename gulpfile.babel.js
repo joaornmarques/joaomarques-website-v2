@@ -163,7 +163,7 @@ export function styles() {
 export function scripts() {
   return rollup({
     entry: paths.scripts.manifesto,
-    sourceMap: true,
+		sourceMap: true,
     plugins: [
       $.babel({
         exclude: 'node_modules/**',

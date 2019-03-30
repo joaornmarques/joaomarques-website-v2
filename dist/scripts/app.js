@@ -277,6 +277,16 @@ $('.cube-bg-c-gh-js').mouseleave(function(){
 	$('.c-cube__face--inside').removeClass('c-cube__face--bg-c-gh').addClass('c-cube__face--bg-default');
 });
 
+//c-gh
+
+$('.cube-bg-18-js').hover(function(){
+	$('.c-cube__face--inside').removeClass('c-cube__face--bg-default').addClass('c-cube__face--bg-18');
+});
+
+$('.cube-bg-18-js').mouseleave(function(){
+	$('.c-cube__face--inside').removeClass('c-cube__face--bg-18').addClass('c-cube__face--bg-default');
+});
+
 
 /*-----------------------------
 ------Cube show trigger--------
