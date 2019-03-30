@@ -62,11 +62,12 @@
     "rollup-stream": "^1.24.1",
     "sw-precache": "^4.3.0",
     "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^1.1.2"
+    "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
     "marked": "^0.3.19",
     "normalize.css": "^5.0.0",
+    "stack-trace": "0.0.10",
     "swiper": "^3.4.2"
   }
 }

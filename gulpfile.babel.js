@@ -164,6 +164,7 @@ export function scripts() {
   return rollup({
     entry: paths.scripts.manifesto,
 		sourceMap: true,
+		format: 'es',
     plugins: [
       $.babel({
         exclude: 'node_modules/**',
