@@ -15,6 +15,10 @@
       font-family: 'Zwizz-Bold', Helvetica, sans-serif;
       font-weight: 700;
    }
+
+   &--indication{
+      @include font-size(12px,19px);
+   }
 }
 
 .c-text-note{
@@ -42,6 +46,16 @@
    &--label{
       @include font-size(14px,24px);
       border: solid 1px black;
+      padding: 0 $g-spacing-unit / 1.5;
+
+      @include mappy-bp(sm){
+         @include font-size(16px,24px);
+      }
+   }
+
+   &--label-orange{
+      @include font-size(14px,24px);
+      border: solid 1px getAppColor(pallet, orange);
       padding: 0 $g-spacing-unit / 1.5;
 
       @include mappy-bp(sm){

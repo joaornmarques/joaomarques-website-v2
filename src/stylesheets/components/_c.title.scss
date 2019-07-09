@@ -28,6 +28,10 @@
       -webkit-text-stroke: 1px white;
    }
 
+   &--overlined{
+      text-decoration: line-through;
+   }
+
    &--bold{
       font-family: 'Zwizz-Bold', Helvetica, sans-serif;
       font-weight: 700;
@@ -69,6 +73,20 @@
 
          .c-text-note{
             color: getAppColor(pallet, green);
+            -webkit-text-stroke: 0px;
+         }
+      }
+   }
+
+   &--selectable-orange{
+      color: getAppColor(pallet, orange);
+      &:hover,
+      &:focus{
+         color: transparent;
+         -webkit-text-stroke: 1px getAppColor(pallet, orange);
+
+         .c-text-note{
+            color: getAppColor(pallet, orange);
             -webkit-text-stroke: 0px;
          }
       }

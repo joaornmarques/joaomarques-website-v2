@@ -9,7 +9,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 $(function() {
 	$('.body-js').hide();
 	$(window).on('load', function(){
-		$('.body-js').show();
+		$('.body-js').show().removeClass('u-bg-color-whitest');
 		$('.o-container').addClass('o-container--intro-animate');
 		$('.o-nav').addClass('o-nav--intro-animate');
 		if($('.landing-js').is(':visible')){
@@ -62,6 +62,7 @@ $(function() {
 			$('.o-container').addClass('o-container--out-animate');
 			$('.o-nav').removeClass('o-nav--intro-animate');
 			$('.c-cube-container').removeClass('c-cube-container--intro-animate');
+			$('body').addClass('u-bg-color-whitest');
 			hoverSound.volume = 0;
 
 			setTimeout(function() {

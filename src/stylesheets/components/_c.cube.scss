@@ -12,9 +12,11 @@
    right: 0;
    z-index: 1;
    transform: scale(0);
-   transition: transform 0.5s ease;
+   opacity: 0;
+   transition: transform 0.5s ease, opacity 0.5s ease;
    &--intro-animate{
       transform: scale(1);
+      opacity: 1;
    }
 }
 
@@ -37,12 +39,27 @@
 
    &--dark{
       .c-cube__face--bg-default{
-         background: url('../assets/images/dots-invert.gif');
-         opacity: 0.2;
-         background-size: 100% 100%;
+         background: repeating-radial-gradient(#161616 10%, #555555 20%);
+         opacity: 0.4;
+         animation: face-bg-animation 2s ease-out infinite;
+      }
+   }
+
+   &--blue{
+      .c-cube__face--bg-default{
+         background: repeating-radial-gradient(#0002C9 10%, #3A3CFF 20%);
+         opacity: 0.4;
+         animation: face-bg-animation 2s ease-out infinite;
       }
    }
 }
+
+@keyframes face-bg-animation {
+   0%{background-size: 100% 100%; background-position: 0% 0%;}
+   80%{background-size: 1000% 1000%; background-position: 0% 0%;}
+   100%{background-size: 1000% 1000%; background-position: 0% 0%;}
+}
+
 
 @keyframes infinite-rotate {
    from{transform: rotateX(0deg) rotateY(0deg);}
@@ -51,7 +68,6 @@
 
 .c-cube__face{
    background: url("../assets/images/logo_outline.svg");
-   transition: background 0.3s;
    background-size: 100% 100%;
    position: absolute;
    width: 100%;
@@ -65,6 +81,10 @@
 
    &--dark{
       background: url("../assets/images/logo_outline-dark.svg");
+   }
+
+   &--blue{
+      background: url("../assets/images/logo_outline-blue.svg");
    }
 }
 
@@ -128,8 +148,9 @@
 //------CUBE INSIDE IMAGE------//
 
 .c-cube__face--bg-default{
-   background: url('../assets/images/dots.gif');
-   background-size: 100% 100%;
+   background: repeating-radial-gradient(#FFFFFF 10%, #AAAAAA 20%);
+   opacity: 0.4;
+   animation: face-bg-animation 2s ease-out infinite;
 }
 
 .c-cube__face--bg-profile{

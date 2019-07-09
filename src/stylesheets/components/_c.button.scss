@@ -120,6 +120,17 @@ $button-base-radius: 44px;
       border-bottom-color: getAppColor(pallet, green);
    }
 
+   &--orange{
+      color: getAppColor(pallet, orange);
+      border-bottom-color: getAppColor(pallet, orange);
+
+      &:hover,
+      &:focus{
+         color: white;
+         border-bottom-color: white;
+      }
+   }
+
    &--brand{
       color: getAppColor(brand);
       border-bottom-color: getAppColor(brand);
