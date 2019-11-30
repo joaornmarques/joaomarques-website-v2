@@ -89,7 +89,17 @@
 	      "og_title"       : "18 of 18' — João Marques Blog",
 	      "og_description" : "Eighteen albums that made my year in music.",
 	      "og_image"       : "http://joaomarques.website/assets/images/thumbnail-18_of_18.jpg"
+	   },
+		 {
+	      "slug"           : "enemm",
+	      "name"           : "ENEMM'19",
+	      "title"          : "João Marques —  ENEMM'19",
+	      "description"    : "Branding & Graphic design / Identity for the 4th edition of multimedia students national meeting.",
+	      "og_title"       : "1João Marques —  ENEMM'19",
+	      "og_description" : "Branding & Graphic design / Identity for the 4th edition of multimedia students national meeting.",
+	      "og_image"       : "http://joaomarques.website/assets/images/thumbnail-enemm.jpg"
 	   }
+
 
 	]
 }

@@ -39,7 +39,7 @@ $(document).ready(function() {
 
 var cubeFaces = [
 	"sonic","profile","ws",
-	"1w4g","mix","mauvais","shift","ruc",
+	"1w4g","mix","mauvais","shift","ruc","enemm",
 	"contact","c-insta","c-fb","c-tw","c-be","c-gh","c-vimeo",
 	"18"
 ];
