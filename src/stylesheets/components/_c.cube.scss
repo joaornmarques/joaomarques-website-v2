@@ -11,8 +11,9 @@
    bottom: 0;
    right: 0;
    z-index: 1;
-   transform: scale(0);
+   transform: scale(0.5);
    opacity: 0;
+   will-change: transform, opacity;
    transition: transform 0.5s ease, opacity 0.5s ease;
    &--intro-animate{
       transform: scale(1);
@@ -23,18 +24,11 @@
 .c-cube{
    width: 50vw;
    height: 50vw;
+   will-change: transform;
    transition: transform 4s cubic-bezier(.09,.35,.02,.98);
    @include mappy-bp(sm){
       width: 50vh;
       height: 50vh;
-   }
-
-   //Under construction cube
-   &--construction{
-      .c-cube__face--bg-default{
-         background: url('../assets/images/con.gif');
-         background-size: 100% 100%;
-      }
    }
 
    &--dark{
@@ -153,84 +147,21 @@
    animation: face-bg-animation 2s ease-out infinite;
 }
 
-.c-cube__face--bg-profile{
-   background: url('../assets/images/profile.jpg');
-   background-size: 100% 100%;
-}
-
 .c-cube__face--bg-sonic{
    background: url('../assets/images/retro.gif');
    background-size: 100% 100%;
 }
 
-.c-cube__face--bg-ws{
-   background: url('../assets/images/ws.jpg');
-   background-size: 100% 100%;
-}
+$cubefaces: 'profile','ws',
+'1w4g','mix','mauvais','shift','ruc',
+'contact','c-insta','c-fb','c-tw','c-be','c-vimeo','c-gh',
+'18';
 
-.c-cube__face--bg-1w4g{
-   background: url('../assets/images/1word4gifs.jpg');
-   background-size: 100% 100%;
-}
-
-.c-cube__face--bg-mix{
-   background: url('../assets/images/mixtape.jpg');
-   background-size: 100% 100%;
-}
-
-.c-cube__face--bg-mauvais{
-   background: url('../assets/images/mauvais.jpg');
-   background-size: 100% 100%;
-}
-
-.c-cube__face--bg-shift{
-   background: url('../assets/images/shift.jpg');
-   background-size: 100% 100%;
-}
-
-.c-cube__face--bg-ruc{
-   background: url('../assets/images/ruc.jpg');
-   background-size: 100% 100%;
-}
-
-.c-cube__face--bg-contact{
-   background: url('../assets/images/c.jpg');
-   background-size: 100% 100%;
-}
-
-.c-cube__face--bg-c-insta{
-   background: url('../assets/images/c-insta.jpg');
-   background-size: 100% 100%;
-}
-
-.c-cube__face--bg-c-fb{
-   background: url('../assets/images/c-fb.jpg');
-   background-size: 100% 100%;
-}
-
-.c-cube__face--bg-c-tw{
-   background: url('../assets/images/c-tw.jpg');
-   background-size: 100% 100%;
-}
-
-.c-cube__face--bg-c-be{
-   background: url('../assets/images/c-be.jpg');
-   background-size: 100% 100%;
-}
-
-.c-cube__face--bg-c-vimeo{
-   background: url('../assets/images/c-vimeo.jpg');
-   background-size: 100% 100%;
-}
-
-.c-cube__face--bg-c-gh{
-   background: url('../assets/images/c-gh.jpg');
-   background-size: 100% 100%;
-}
-
-.c-cube__face--bg-18{
-   background: url('../assets/images/18_of_18.jpg');
-   background-size: 100% 100%;
+@each $i in $cubefaces {
+   .c-cube__face--bg-#{$i}{
+      background: url('../assets/images/#{$i}.jpg');
+      background-size: 100% 100%;
+   }
 }
 
 //------FACES------//
