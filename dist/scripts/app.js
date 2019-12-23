@@ -6,19 +6,17 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 /*-----------------------------
 -----------Page load-----------
 -----------------------------*/
-$(function() {
-	$('.body-js').hide();
-	$(window).on('load', function(){
-		$('.body-js').show().removeClass('u-bg-color-whitest');
-		$('.o-container').addClass('o-container--intro-animate');
-		$('.o-nav').addClass('o-nav--intro-animate');
-		if($('.landing-js').is(':visible')){
-			setTimeout(function() {
-				$('.c-cube-container').addClass('c-cube-container--intro-animate');
-			}, 1500);
-		}
-	});
-});
+
+window.onload = function() {
+	$('.body-js').show().removeClass('u-bg-color-whitest');
+	$('.o-container').addClass('o-container--intro-animate');
+	$('.o-nav').addClass('o-nav--intro-animate');
+	if($('.landing-js').is(':visible')){
+		setTimeout(function() {
+			$('.c-cube-container').addClass('c-cube-container--intro-animate');
+		}, 1500);
+	}
+};
 
 
 
@@ -132,7 +130,7 @@ var cubeFaces = [
 	"sonic","profile","ws",
 	"1w4g","mix","mauvais","shift","ruc","enemm",
 	"contact","c-insta","c-fb","c-tw","c-be","c-gh","c-vimeo",
-	"18"
+	"18","2019-review"
 ];
 
 function hoverCube(face){

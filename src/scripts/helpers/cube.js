@@ -41,7 +41,7 @@ var cubeFaces = [
 	"sonic","profile","ws",
 	"1w4g","mix","mauvais","shift","ruc","enemm",
 	"contact","c-insta","c-fb","c-tw","c-be","c-gh","c-vimeo",
-	"18"
+	"18","2019-review"
 ];
 
 function hoverCube(face){

@@ -98,8 +98,15 @@
 	      "og_title"       : "1João Marques —  ENEMM'19",
 	      "og_description" : "Branding & Graphic design / Identity for the 4th edition of multimedia students national meeting.",
 	      "og_image"       : "http://joaomarques.website/assets/images/thumbnail-enemm.jpg"
+	   },
+		 {
+	      "slug"           : "my2019inreview",
+	      "name"           : "My 2019 in review",
+	      "title"          : "My 2019 in review — João Marques Blog",
+	      "description"    : "A personal retrospective of this year.",
+	      "og_title"       : "My 2019 in review — João Marques Blog",
+	      "og_description" : "A personal retrospective of this year.",
+	      "og_image"       : "http://joaomarques.website/assets/images/2019/thumbnail-2019-review.jpg"
 	   }
-
-
 	]
 }
