@@ -1,2 +1,28 @@
-/node_modules
+node_modules
+npm-debug.log
+bower_components
+.sass-cache
+.bowerrc
+.idea/*
+*.iml
+*.sublime-*
+projectFilesBackup
+
+dist
+
+# Apple stuff
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
