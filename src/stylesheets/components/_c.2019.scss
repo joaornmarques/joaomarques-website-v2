@@ -33,7 +33,7 @@ $theme-color: getAppColor(2019, music);
     .c-2019__section-number{
       h3{
         @include mappy-bp(sm){
-          transform: scale(1.4);
+          transform: scale(1.1);
         }
       }
     }
