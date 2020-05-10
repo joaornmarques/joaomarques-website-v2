@@ -8,7 +8,7 @@ bower_components
 *.sublime-*
 projectFilesBackup
 
-dist
+dist/
 
 # Apple stuff
 .DS_Store
