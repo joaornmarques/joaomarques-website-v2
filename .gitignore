@@ -1,4 +1,4 @@
-/node_modules
+.DS_Store
 npm-debug.log
 bower_components
 .sass-cache
@@ -9,6 +9,7 @@ bower_components
 projectFilesBackup
 
 dist/
+node_modules/
 
 # Apple stuff
 .DS_Store
