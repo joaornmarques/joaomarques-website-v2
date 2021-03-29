@@ -1,8 +1,8 @@
 {
 	"defaults": {
 		"app_name": "joaomarques.website",
-		"keywords": "joao, marques, multimedia, designer, front-end, developer, portfolio, cube",
-		"author"  : "João Marques . 2018",
+		"keywords": "joao, marques, multimedia, designer, front-end, developer, portfolio",
+		"author"  : "João Marques . 2021",
 		"domain"  : "http://joaomarques.website/",
 		"logo": "http://joaomarques.website/assets/images/jm_logo.svg",
 		"og": {

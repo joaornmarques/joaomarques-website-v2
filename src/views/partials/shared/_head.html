@@ -11,14 +11,17 @@
       <meta name="description" content="{{#if this.description}}{{this.description}}{{else}}{{../meta.defaults.description}}{{/if}}"/>
       <meta name="author" content="{{../meta.defaults.author}}"/>
       <meta name="application-name" content="{{../meta.defaults.app_name}}"/>
-      <meta name="robots" content="INDEX, FOLLOW">
+      <meta name="robots" content="noydir, noodp">
 
       <!--  Essential OG Tags -->
+      <meta property="og:type" content="website" />
       <meta property="og:title" content="{{#if this.og_title}}{{this.og_title}}{{else}}{{this.title}}{{/if}}">
       <meta property="og:description" content="{{#if this.og_description}}{{this.og_description}}{{else}}{{this.description}}{{/if}}">
       <meta property="og:image" content="{{#if this.og_image}}{{this.og_image}}{{else}}{{../meta.defaults.logo}}{{/if}}">
       <meta property="og:url" content="{{../meta.defaults.domain}}{{this.slug}}">
       <meta name="og:site_name" content="{{../meta.defaults.og.site_name}}">
+      <meta name="description" property="og:description" content="{{#if this.og_description}}{{this.og_description}}{{else}}{{this.description}}{{/if}}">
+      <meta name="image" property="og:image" content="{{#if this.og_image}}{{this.og_image}}{{else}}{{../meta.defaults.logo}}{{/if}}">
 
       <!--  Twitter Tags -->
       <meta name="twitter:title" content="{{../meta.defaults.social.twitter_title}}" />
@@ -27,6 +30,7 @@
       <meta name="twitter:image:alt" content="{{../meta.defaults.social.twitter_image_alt}}">
       <meta name="twitter:card" content="{{../meta.defaults.social.twitter_card}}">
       <meta name="twitter:site" content="{{../meta.defaults.social.twitter_site}}">
+      <meta name="twitter:creator" content="{{../meta.defaults.social.twitter_site}}">
 
    {{/ifpage}}
 {{/each}}
