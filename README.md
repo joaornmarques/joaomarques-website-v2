@@ -1,5 +1,5 @@
-# João Marques website
-My personal website — [joaomarques.website](http://joaomarques.website).
+# João Marques website (legacy)
+My personal website from 2018 to 2023
 
 ### Requirements
 1. A computer.
